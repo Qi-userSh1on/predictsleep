@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="prediksi-model.css" />
+    <title>ML API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Model Prediksi LivWell</h1>
+
+      <form action="{{url_for('predict')}}" method="post">
+        <input
+          type="text"
+          name="Jam Tidur"
+          placeholder="Enter here..."
+          required="required"
+        />
+        <input
+          type="text"
+          name="Jam Bangun"
+          placeholder="Enter here..."
+          required="required"
+        />
+        <input 
+          type="text" 
+          name "" 
+          placeholder="Potassium"
+          required="required"
+          /> 
+        <input 
+          type="text" 
+          name "temperature"
+          placeholder="temperature" 
+          required="required"
+          /> 
+        <input 
+          type="text" 
+          name "humidity" 
+          placeholder="humidity"  
+          required="required"
+          />
+        <input 
+          type="text" 
+          name="pH" 
+          placeholder="PH" 
+          required="required"
+          />
+        <input 
+          type="text" 
+          name "rainfall" 
+          placeholder="rainfall"
+          required="required"
+          />
+        <br/>
+        <button type="submit" 
+          class="prediksi">
+          Prediksi
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
